@@ -1,6 +1,6 @@
 import React from 'react'
 
 function Login(){
-    return <h1> Teste de tela </h1>
+    return <h1> Tela Inicial </h1>
 }
 export default Login
