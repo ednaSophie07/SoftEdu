@@ -1,6 +1,10 @@
-import React from 'react'
+import {useState} from 'react'
 
 function Login(){
-    return <h1> Tela Inicial1 </h1>
+    const [isActive,setIsActive] = useState(false)
+    function handler(){
+        setIsActive((valorAtualDoIsActive)=>!valorAtualDoIsActive)
+    }
+    return <h1 style={{backgroundColor:isActive?"red":"blue"}} onClick={handler}> Tela Inicial1 </h1>
 }
 export default Login
